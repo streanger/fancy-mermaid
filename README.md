@@ -100,3 +100,20 @@ graph TD;
     0(first)-->18(some10);
     0(first)-->7(seven);
 ```
+
+## think of\todo
+
+:black_square_button: what if choice is in the list of inputs or outputs for a given node? then we don't lose shots, but we don't find any input/output. This needs to be fixed somehow by giving a while loop, or appropriate conditions that will filter out correctly available input and output nodes
+
+:white_check_mark:  allow_reverse - allow for reverse connections between nodes. In other case only one way connection is allowed. Its fine for now
+    
+:black_square_button: implement somy copy method for node? https://stackoverflow.com/questions/45051720/best-practice-to-implement-copy-method
+        
+:black_square_button: what about the random order of pairing inputs and outputs? currently we iterate first all inputs and then all outputs, so the results are not fully random
+    
+:black_square_button: I realize that node should keep it restrictions independ on Fancy class object (todo, make sure its ok)
+    
+:black_square_button: relation between nodes should be make in one node, for both of them, to not be omitted
+    
+
+ 
