@@ -115,5 +115,5 @@ graph TD;
     
 :black_square_button: relation between nodes should be make in one node, for both of them, to not be omitted
     
-:white_check_mark: remove `make_input` and `make_output` methods for Node class and implement fully `connect` method (also in Fancy class)
+:black_square_button: remove `make_input` and `make_output` methods for Node class and implement fully `connect` method (also in Fancy class)
  
