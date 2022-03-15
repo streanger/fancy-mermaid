@@ -1,0 +1,16 @@
+```mermaid
+graph TD;
+    0(some)-->2(here);
+    6(mandy)-->2(here);
+    6(mandy)-->0(some);
+    6(mandy)-->4(this);
+    6(mandy)-->7(candy);
+    6(mandy)-->5(meow);
+    1(thing)-->7(candy);
+    4(this)-->7(candy);
+    7(candy)-->3(they);
+    4(this)-->3(they);
+    4(this)-->5(meow);
+    3(they)-->5(meow);
+    5(meow)-->3(they);
+```
