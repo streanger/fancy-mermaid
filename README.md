@@ -4,7 +4,7 @@ tool for making fancy mermaid graphs
 
 ## two nodes relations
 
-[!image](candy_and_mandy.png)
+![image](candy_and_mandy.png)
 
 ## example code
 
