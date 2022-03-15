@@ -105,7 +105,7 @@ graph TD;
 
 :black_square_button: what if choice is in the list of inputs or outputs for a given node? then we don't lose shots, but we don't find any input/output. This needs to be fixed somehow by giving a while loop, or appropriate conditions that will filter out correctly available input and output nodes
 
-:white_check_mark:  allow_reverse - allow for reverse connections between nodes. In other case only one way connection is allowed. Its fine for now
+:white_check_mark:  `allow_reverse` - allow for reverse connections between nodes. In other case only one way connection is allowed. Its fine for now
     
 :black_square_button: implement somy copy method for node? https://stackoverflow.com/questions/45051720/best-practice-to-implement-copy-method
         
@@ -115,5 +115,5 @@ graph TD;
     
 :black_square_button: relation between nodes should be make in one node, for both of them, to not be omitted
     
-
+:white_check_mark: remove `make_input` and `make_output` methods for Node class and implement fully `connect` method (also in Fancy class)
  
