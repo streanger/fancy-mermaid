@@ -41,6 +41,14 @@ class Fancy():
         it should be mixed between inputs and outputs matching
         """
         for node in self.nodes:
+            # ******** find existing connections ********
+            if True:
+                # TODO: this is fix; Fancy class doesn't handle connections created manually for nodes before passing into class
+                left_connections = [(item, node) for item in node.inputs]
+                right_connections = [(node, item) for item in node.outputs]
+                self.connections.extend(left_connections)
+                self.connections.extend(right_connections)
+                
             if not quiet:
                 print(colored(node.name, 'red'))
             available_outputs = self.list_possible(node, as_input=False)
@@ -66,6 +74,10 @@ class Fancy():
                 if not quiet:
                     print(colored('    ({} -> {})'.format(node.name, choice.name), 'yellow'))
                 self.connections.append((node, choice))
+                
+        if True:
+            # TODO: this is fix; Fancy class doesn't handle connections created manually for nodes before passing into class
+            self.connections = list(set(self.connections))
         return None
         
     def list_possible(self, node, as_input=True):
